@@ -29,7 +29,7 @@ export default function Header() {
           <Link to="/" className="mr-4 hidden md:block md:text-xs lg:text-base dark:text-white">
             Log in
           </Link>
-          <Button color="primary">
+          <Button color="primary" as={Link} to="/face">
             <span className="md:text-xs lg:text-base">Get started</span>
           </Button>
           <Navbar.Toggle />
