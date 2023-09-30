@@ -10,10 +10,18 @@ export default {
     extend: {
       backgroundImage: {
         'jumbotron': "url('~/assets/images/bg-jumbotron.jpg')",
+        'footer': "url('~/assets/images/bg-footer.jpg')",
       }
     },
+    fontFamily: {
+      'heavitas': ['Heavitas'],
+    },
     colors: {
-      "deepxr-bg-dark": "#111928",
+      "xr-primary":"#FF3601",
+      "xr-black":"#000000",
+      "xr-gray":"#6B7280",
+      "xr-white":"#FFFFFF",
+      // "deepxr-bg-dark": "#111928",
     }
   },
   plugins: [

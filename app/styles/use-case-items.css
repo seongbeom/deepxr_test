@@ -1,0 +1,57 @@
+/*.use-case-items .slick-active.slick-current {*/
+/*    width: calc(60vw) !important;*/
+/*}*/
+
+/*!*.slick-active.slick-current + .slick-slide {*!*/
+/*!*    width: calc(40vw) !important;*!*/
+/*!*}*!*/
+
+
+/*.use-case-items .slick-slide {*/
+/*    width: calc(40vw);*/
+/*}*/
+
+/*!*.slick-active.slick-current + .slick-slide {*!*/
+/*!*    width: calc(30vw) !important;*!*/
+/*!*}*!*/
+
+/*!*.slick-active.slick-current + .slick-slide + .slick-slide {*!*/
+/*!*    width: calc(30vw) !important;*!*/
+/*!*}*!*/
+
+/*!*.slick-slide {*!*/
+/*!*    padding: 0 10px;*!*/
+/*!*}*!*/
+/*!*.slick-list {*!*/
+/*!*    margin: 0 -10px;*!*/
+/*!*}*!*/
+/*.use-case-items .slick-slide:not(:last-child) {*/
+/*    margin-right: 20px;*/
+/*}*/
+
+
+/*.use-case-items .slick-slide {*/
+/*    transition: width 0.6s cubic-bezier(0.19, 1, 0.22, 1) 0s;*/
+/*}*/
+
+
+/*@media (min-width: 1024px) {*/
+/*    .use-case-items .slick-active.slick-current {*/
+/*        width: calc(35vw) !important;*/
+/*        max-width: 600px;*/
+/*    }*/
+
+/*    .use-case-items .slick-slide {*/
+/*        width: calc(30vw) !important;*/
+/*        max-width: 510px;*/
+/*    }*/
+
+/*}*/
+
+
+.use-case-items .slick-slide {
+    padding: 0 10px;
+}
+.use-case-items .slick-list {
+    margin: 0 -10px;
+}

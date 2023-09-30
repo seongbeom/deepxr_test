@@ -8,40 +8,30 @@ export const meta: V2_MetaFunction = () => [{ title: "Face" }];
 
 export default function Index() {
   return (
-    <div className="pt-24">
-      <h1 className="text-[40px] font-bold text-center text-black dark:text-white">
-        Deep Toy
+    <div className="container mx-auto px-4 mt-8">
+      <h1 className="text-[40px] font-bold text-center text-xr-primary font-heavitas">
+        MY MINI PET
       </h1>
-      <div className="max-w-3xl mx-4 md:mx-auto">
-        <div
-          className="flex flex-col justify-center items-center aspect-video rounded-lg bg-gray-50 border-2 border-gray-200 border-dashed my-8"
-        >
-          <div
-            className="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 relative gap-[7px]"
-          >
-            <img src={IconUpload} />
-            <p className="flex-grow-0 flex-shrink-0 text-sm text-center text-gray-500">
-      <span className="flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-gray-500"
-      >설명영역</span
-      ><span className="flex-grow-0 flex-shrink-0 text-sm text-center text-gray-500">
-        (이미지 조건)</span
-            >
-            </p>
-            <p className="flex-grow-0 flex-shrink-0 text-xs text-center text-gray-500">
-              SVG, PNG, JPG or GIF (MAX. 800x400px)
-            </p>
-          </div>
+      <div className={'flex flex-col my-4 max-w-3xl mx-auto'}>
+        <div className={'flex flex-col items-center justify-center aspect-video border-xr-black border-2 rounded-lg '}>
+          <img src={IconUpload} />
+          <p className={'font-semibold my-2'}>Click to upload</p>
+          <p className={'text-[12px]'}>SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
         </div>
-        <div className="grid md:grid-cols-2 gap-5">
-          <Button color="primary" size="xl">
+        <div className="grid grid-cols-2 gap-2 md:gap-5 my-4">
+          <Button className={'bg-xr-primary whitespace-nowrap'} size="xl">
             {/*<img src={IconCamera} className="mr-2" />*/}
             <Camera className="dark:fill-black mr-2"/>
             카메라 촬영
           </Button>
-          <Button color="primary" size="xl">
+          <Button className={'bg-xr-primary whitespace-nowrap'} size="xl">
             <Photograph className="dark:fill-black mr-2"/>
             사진 업로드
           </Button>
+        </div>
+        <div className={'py-4'}>
+          <h3 className={'text-[24px] font-bold mb-2'}>설명 가이드</h3>
+          <p>설명가이드 영역입니다.설명가이드 영역입니다.설명가이드 영역입니다.설명가이드 영역입니다.설명가이드 영역입니다.설명가이드 영역입니다.설명가이드 영역입니다.설명가이드 영역입니다.설명가이드 영역입니다.설명가이드 영역입니다.설명가이드 영역입니다.설명가이드 영역입니다.</p>
         </div>
       </div>
     </div>

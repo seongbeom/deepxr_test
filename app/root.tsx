@@ -11,8 +11,8 @@ import {
 
 import stylesheet from "~/tailwind.css";
 import Header from "~/components/Header";
-import MegaMenu from "~/components/MegaMenu";
-import { CustomFlowbiteTheme, DarkThemeToggle, Flowbite } from "flowbite-react";
+import { CustomFlowbiteTheme, Flowbite } from "flowbite-react";
+import Footer from "~/components/Footer";
 
 const customTheme: CustomFlowbiteTheme = {
   button: {
@@ -34,19 +34,18 @@ export default function App() {
     <head>
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <link href="https://fonts.cdnfonts.com/css/heavitas" rel="stylesheet" />
       <Meta />
       <Links />
     </head>
     <body className="h-full">
 
-
     <Flowbite theme={{ theme: customTheme }}>
-      <div className="bg-white dark:bg-deepxr-bg-dark">
+      <div className="bg-white overflow-x-hidden">
         <Header />
         <Outlet />
-        <MegaMenu />
+        <Footer />
       </div>
-      <DarkThemeToggle />
     </Flowbite>
 
     <ScrollRestoration />
